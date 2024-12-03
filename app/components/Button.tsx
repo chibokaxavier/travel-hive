@@ -15,7 +15,7 @@ const Button = ({ type, title, variant, icon }: ButttonProps) => {
       className={`flexCenter gap-3 rounded-full border ${variant}`}
     >
       {icon && <Image src={icon} alt={title} width={24} height={24} />}
-      <label>{title}</label>
+      <label className="bold-16 whitespace-nowrap">{title}</label>
     </button>
   );
 };
